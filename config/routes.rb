@@ -1,4 +1,16 @@
 Testblog::Application.routes.draw do
+  get "staticpages/home"
+
+  get "staticpages/about"
+
+  get "staticpages/links"
+
+  get "staticpages/contact"
+
+  get "staticpages/projects"
+
+  get "staticpages/blog"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
