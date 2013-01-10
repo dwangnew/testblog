@@ -5,18 +5,15 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-
-  <style type="text/css">
-
-  </style>
+  
 </head>
 <body>
 
 	<header class="navbar navbar-fixed-top">
-		<h1>Learn Programming With Dave!</h1>
+		<h1>Learn With David!</h1>
 		<div class="navbar-inner">
 			<div class="container">
-				<%= link_to "Learning Programming With Dave", home_path, id: "logo" %>
+				<%= link_to "Learn To Code With Yours Truly", home_path, id: "logo" %>
 				<nav>
 					<ol class="nav pull-right">
 						<li><%= link_to "Home", home_path %></li>
@@ -31,22 +28,23 @@
 		</div>
 	</header>
 
-<%= yield %>
 
-<footer class="footer">
-	<small>
-		<a href="http://railstutorial.org/">Rails Tutorial</a>
-		by Michael Hartl
-	</small>
-	<nav>
-		<ul>
-			<li><%= link_to "About", about_path %></li>
-			<li><%= link_to "Contact", '#' %></li>
-			<li><a href="http://news.railstutorial.org/">News</a></li>
-		</ul>
-	</nav>
-</footer>
+	<%= yield %>
 
+
+	<footer class="footer">
+		<small>
+			<a href="http://railstutorial.org/">Rails Tutorial</a>
+			by Michael Hartl
+		</small>
+		<nav>
+			<ul>
+				<li><%= link_to "About", about_path %></li>
+				<li><%= link_to "Contact", '#' %></li>
+				<li><a href="http://news.railstutorial.org/">News</a></li>
+			</ul>
+		</nav>
+	</footer>
 
 </body>
 </html>
