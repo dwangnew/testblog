@@ -1,15 +1,12 @@
 Testblog::Application.routes.draw do
   get "staticpages/home"
-
   get "staticpages/about"
-
-  get "staticpages/links"
-
-  get "staticpages/contact"
-
   get "staticpages/projects"
+  get "staticpages/code"
+  get "staticpages/archive"
+  get "staticpages/musings"
 
-  get "staticpages/blog"
+  root :to => 'staticpages#home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
