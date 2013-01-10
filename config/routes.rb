@@ -1,10 +1,10 @@
 Testblog::Application.routes.draw do
-  get "staticpages/home"
-  get "staticpages/about"
-  get "staticpages/projects"
-  get "staticpages/code"
-  get "staticpages/archive"
-  get "staticpages/musings"
+  match '/home', to: "staticpages#home"
+  match '/about', to: "staticpages#about"
+  match '/projects', to: "staticpages#projects"
+  match '/code', to: "staticpages#code"
+  match '/archive', to: "staticpages#archive"
+  match '/musings', to: "staticpages#musings"
 
   root :to => 'staticpages#home'
 
