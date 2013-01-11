@@ -33,8 +33,9 @@ header h1 {
 }
 
 #blog-posts {
-// 	float: left;
+ 	float: left;
  	width: 70%;
+ 	margin-bottom: 40px;
 	}
 .post {
 	background-color: white;
@@ -91,6 +92,7 @@ text-decoration: none;
 
 /* footer layout and design*/
 footer {
+	clear:both;
 margin-top: 45px;
 padding-top: 5px;
 border-top: 1px solid #eaeaea;
