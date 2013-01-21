@@ -37,13 +37,23 @@ header h1 {
  	width: 70%;
  	margin-bottom: 40px;
 	}
-.post {
+.blog-post {
 	background-color: white;
 	color: #606060;
 	padding: 1em;
 	border: .5px solid gray;
-	margin-top: 30px;
+	margin-top: 0px;
 	font-size: 80%;
+	}
+.blog-post h3 {
+	background-color: white;
+	color: #606060;
+	padding-left: 1em;
+	padding-bottom: 0em;
+	border: .5px solid gray;
+	margin-top: 30px;
+	margin-bottom: 0px;
+	font-size: 120%;
 	}
 .sidebar {
 	margin-left: 73%;

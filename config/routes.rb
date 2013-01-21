@@ -7,6 +7,8 @@ Testblog::Application.routes.draw do
   match '/musings', to: "staticpages#musings"
 
   root :to => 'staticpages#home'
+  resources :posts
+  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
