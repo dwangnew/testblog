@@ -10,44 +10,15 @@
 
 	<body>
 		
-		<header class="navbar navbar-fixed-top">
-			<h1>Learn With David!</h1>
-			<div class="navbar-inner">
-				<div class="container">
-					<%= link_to "Learning To Code - Yours Truly", home_path, id: "logo" %>
-					<nav>
-						<ol class="nav pull-right">
-							<li><%= link_to "Home", home_path %></li>
-							<li><%= link_to "Archive", archive_path %></li>
-							<li><%= link_to "Projects", projects_path %></li>
-							<li><%= link_to "Code", code_path %></li>
-							<li><%= link_to "Musings", musings_path %></li>
-							<li><%= link_to "About", about_path %></li>
-						</ol>
-					</nav>
-				</div>
-			</div>
-		</header>
+		<%= render 'layouts/header' %>
 		
 		<div id="body-container">
 			<div class="hero-unit">
 			<%= yield %>
 			</div>
-
-			<footer class="footer">
-				<small>
-					<a href="http://railstutorial.org/">Rails Tutorial</a>
-					by Michael Hartl
-				</small>
-				<nav>
-					<ul>
-						<li><%= link_to "About", about_path %></li>
-						<li><%= link_to "Contact", '#' %></li>
-						<li><a href="http://news.railstutorial.org/">News</a></li>
-					</ul>
-				</nav>
-			</footer>
-
 		</div>
+
+		<%= render 'layouts/footer' %>
+
 	</body>
 </html>

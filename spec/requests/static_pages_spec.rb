@@ -1,10 +1,11 @@
 require 'spec_helper'
 
 describe "StaticPages" do
+  subject { page }
 
   describe "Home page" do
+    before { visit root_path }
     it "should have the correct title" do
-    	visit home_path
     	page.should have_selector("title", text: "Learn With Dave | Home")
    		# page.should have_content('Home')
     end
