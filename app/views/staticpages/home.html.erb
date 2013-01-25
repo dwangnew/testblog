@@ -3,7 +3,7 @@
 <div id="blog-posts">
 	<% @posts.each do |post| %>
 		<h3 class="blog-post"> <%= post.title %> </h3>
-		<p class="blog-post"> <%= post.content %> </p>
+		<p class="blog-post"> <%= post.content %> <br> <%= link_to "view this post and comments", post %> </p>
 	<% end %>
 </div>
 
