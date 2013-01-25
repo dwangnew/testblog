@@ -14,13 +14,13 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @post = Post.find(params[:id])
+    @comments = Comment.all
+    @comment = Comment.new(params[:comment])
 
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @post }
     end
-    
-    # @comments = Comment.find(params[:post])    
   end
 
   # GET /posts/new

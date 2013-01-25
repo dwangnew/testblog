@@ -218,7 +218,13 @@ h3.blog-post {
 	margin-bottom: 0px;
 	font-size: 150%;
 	}
-
+p.comment {
+  padding-left: 20px;
+  border-bottom: 1px solid black;
+  border-bottom-height: 500px;
+  margin-top: 0px;
+  margin-bottom: 10px; 
+}
 .sidebar {
 	margin-left: 73%;
 	padding-top: 5px;

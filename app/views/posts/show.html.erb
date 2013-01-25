@@ -5,6 +5,10 @@
   <%= @post.user_id %>
 </p>
  -->
+<h3>
+	Post # <%= @post.id %>
+</h3>
+
 <p>
   <%= @post.title %>
 </p>
@@ -12,6 +16,21 @@
 <p>
   <%= @post.content %>
 </p>
+
+<br>
+
+<h4>Comments</h4>
+<% if @comments.count > 0 %>
+	<% @comments.each do |comment| %>
+	<p class="comment"> <%= comment.content %> <br> Posted: <%= comment.created_at %> </p>
+	<% end %>
+<% end %>
+
+<br>
+
+<h4>New Comment</h4>
+<%= render 'comment_form' %>
+
 
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
