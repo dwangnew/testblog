@@ -175,7 +175,7 @@ margin-bottom: 10px;
   margin: auto;
 }
 
-#body-container {
+#content-container {
 	margin: auto;
 	width: 90%;
 	min-width: 800px;
@@ -198,6 +198,7 @@ header h1 {
 #blog-posts {
  	float: left;
  	width: 70%;
+  margin-top: 12px;
  	margin-bottom: 40px;
 	}
 .blog-post {
@@ -218,6 +219,10 @@ h3.blog-post {
 	margin-bottom: 0px;
 	font-size: 150%;
 	}
+h2#latest-posts {
+  text-decoration: underline;
+  font-size: 180%;
+}
 p.comment {
   padding-left: 20px;
   border-bottom: 1px solid black;
@@ -226,8 +231,8 @@ p.comment {
   margin-bottom: 10px; 
 }
 .sidebar {
-	margin-left: 73%;
-	padding-top: 5px;
+	margin-left: 75%;
+	padding-top: 0px;
 	}
 .sidebar h2 {
 	font-size: 125%;
@@ -245,16 +250,6 @@ p.comment {
 
 
 /* editing the bootstrap css */
-.hero-unit {
-  background-color: white;
-}
-.hero-unit h1{
-  margin-bottom: 0;
-  font-size: 28px;
-  line-height: 1;
-  letter-spacing: -1px;
-  color: inherit;
-}
 .navbar-fixed-top {
 	background-color: #F5F5F5;
 }

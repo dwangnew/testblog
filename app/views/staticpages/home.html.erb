@@ -1,5 +1,7 @@
 <% provide(:title, 'Home') %>
 
+<h2 id="latest-posts">Latest Posts:</h2>
+
 <div id="blog-posts">
 	<% @posts.each do |post| %>
 		<h3 class="blog-post"> <%= post.title %> </h3>
@@ -9,6 +11,6 @@
 
 <div class="sidebar">
 	<h2>About Me</h2>
-	<img src="profile_sm.jpg" />
+	<%= image_tag "profile_sm.jpg" %>
 	<p>Callsign: David J. Wang<br/>Education: Boston University '12<br/><br/>Hello and welcome to my personal site and blog about my programming journey.<br/></p>
 </div>
