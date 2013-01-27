@@ -1,6 +1,10 @@
 /* @import "bootstrap";   #trying to avoid bootstrap! */
 /* first section is from bootstrap */
 
+.header-title-hide {
+  display: none;
+}
+
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   position: fixed;
