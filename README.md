@@ -1,3 +1,5 @@
-This is my attempt at building a blog from scratch using Rails with what I've learned in the beginning few chapters of Michael Hartl's Ruby on Rails Tutorial.
+This is my attempt at building a blog from scratch using Rails with what I've learned in the beginning few chapters of Michael Hartl's Ruby on Rails Tutorial and Rails for Zombies.
 
-As of January 11, 2012, I have finished the first five chapters which includes making relatively static pages using Rails. The dynamic parts include a Rails generated dynamic title and content for each page. I have worked a lot on the layout and HTML and CSS to make it look nice.
+As of January 28, 2012, I have put my own CSS and Javascript to make the blog truly mine. I am working on user signup/signin and posting/commenting functionalities.
+
+This is deployed on heroku: [here](http://floating-lake-4402.herokuapp.com/)
